@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = ({city, setCity, search}) => {
+const Navbar = ({city, setCity, search, darkMode,setDarkMode}) => {
   return (
     <>
         <div className="nav-main">
@@ -8,6 +8,9 @@ const Navbar = ({city, setCity, search}) => {
             setCity(e.target.value)
           }}></input>
           <button onClick={search}>Search</button>
+          <button onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? "Light Mode" : "Dark Mode"}
+        </button>
         </div> <br></br><br></br>
     </>
   )

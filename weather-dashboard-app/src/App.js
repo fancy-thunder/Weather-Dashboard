@@ -10,6 +10,7 @@ const App = () => {
   const [city,setCity] = useState("")
   const [weather, setWeather] =  useState({})
   const [error, setError] = useState("")
+  const [darkMode, setDarkMode] = useState(false);
 
   const search = async () =>{
     try{
@@ -27,7 +28,9 @@ const App = () => {
       <Navbar
       city={city} 
       setCity={setCity} 
-      search={search} />
+      search={search}
+      darkMode={darkMode}
+      setDarkMode={setDarkMode} />
 
       <Weathercard 
       city={weather?.name}

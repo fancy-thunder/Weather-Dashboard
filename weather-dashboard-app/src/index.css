@@ -1,8 +1,18 @@
-body {
+.app {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+
+.light-mode {
   background-image: url("https://wallpapercave.com/wp/wp7991751.jpg");
-  background-size: cover;     
-  background-position: center; 
-  background-repeat: no-repeat;  
+  color: black;
+}
+
+.dark-mode {
+  background-image: url("https://play-lh.googleusercontent.com/h_qtSg1-X-17-peK28n6n8F0LXUJtlw1uiIC0w1VXthUHTu8qZuOxeFjhfIB6W3uF80f=w526-h296-rw");
+  color: white;
 }
 
 
