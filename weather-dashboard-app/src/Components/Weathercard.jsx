@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Weathercard = () => {
+const Weathercard = ({city,temp,weatherCondition,humidity,wind,icon}) => {
   return (
     <>
         <div className="weather-card">
-            <h1>City Name</h1>
-            <h2>Current temp</h2>
-            <h3>Weather Condition</h3>
-            <h3>Humidity</h3>
-            <h3>Wind Speed in km</h3>
-            <img src="" alt="Image of the icon"></img>
+            <h1>{city}</h1>
+            <h2>{temp}</h2>
+            <h3>{weatherCondition}</h3>
+            <h3>{humidity}</h3>
+            <h3>{wind}</h3>
+            <img src={icon} alt="Image of" {icon}></img>
         </div>
     </>
   )

@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid gray;
+  border: 1.5px solid rgb(86, 83, 83);
   margin-left: 25%;
   margin-right: 25%;
   border-radius: 2%;

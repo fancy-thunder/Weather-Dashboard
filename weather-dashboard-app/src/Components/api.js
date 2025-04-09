@@ -17,3 +17,5 @@ const getWeather = async(city) =>{
         <h1>There has been an error in fetching the data.. Try again</h1>
     }
 }
+
+export default getWeather
