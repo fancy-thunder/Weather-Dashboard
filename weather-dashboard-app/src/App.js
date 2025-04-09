@@ -8,7 +8,7 @@ import Weathercard from './Components/Weathercard'
 
 const App = () => {
   const [city,setCity] = useState("")
-  const [weather, setWeather] =  useState("")
+  const [weather, setWeather] =  useState({})
   const [error, setError] = useState("")
 
   const search = async () =>{
@@ -18,7 +18,7 @@ const App = () => {
       setError("")
     }catch(error){
       setError("Unable to get the city")
-      setWeather("Unable to get the weather")
+      setWeather({})
     }
   }
 
@@ -28,13 +28,14 @@ const App = () => {
       city={city} 
       setCity={setCity} 
       search={search} />
+
       <Weathercard 
-      city={weather.city}
+      city={weather?.name}
       temp={weather.main?.temp}
       description={weather.weather?.[0]?.description}
       humidity={weather.main?.humidity}
       wind={weather.wind?.speed}
-      icon={weather.weather?.[0]?.icon}/>
+      icon={`http://openweathermap.org/img/wn/${weather.weather?.[0]?.icon}@2x.png`}/>
     </>
   )
 }

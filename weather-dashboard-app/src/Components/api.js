@@ -7,14 +7,15 @@ const getWeather = async(city) =>{
         const result = await axios.get("https://api.openweathermap.org/data/2.5/weather",
         {
             params: {
-                apiId: myAPI,
-                city: city,
+                appId: myAPI,
+                q: city,
                 units: "metric"
             },
         })
         return result.data
     }catch (error){
-        <h1>There has been an error in fetching the data.. Try again</h1>
+        console.error("Unable to fetch data :(", error)
+        throw error
     }
 }
 
