@@ -1,17 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
 }
 
 .light-mode {
-  background-image: url("https://wallpapercave.com/wp/wp7991751.jpg");
-  color: black;
+  background-image: url("https://wallpapercave.com/wp/wp7953969.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
 }
 
 .dark-mode {
-  background-image: url("https://play-lh.googleusercontent.com/h_qtSg1-X-17-peK28n6n8F0LXUJtlw1uiIC0w1VXthUHTu8qZuOxeFjhfIB6W3uF80f=w526-h296-rw");
+  background-image: url("https://wallpapercat.com/w/full/f/4/8/2036-3840x2160-desktop-4k-firewatch-background-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -49,5 +61,4 @@
   margin-right: 25%;
   border-radius: 2%;
   padding-bottom: 2em;
-  color: rgb(0, 0, 0);
 }

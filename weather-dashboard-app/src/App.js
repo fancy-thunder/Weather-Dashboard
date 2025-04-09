@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import getWeather from './Components/api'
+import './index.css';
 
 
 import Navbar from './Components/Navbar'
@@ -25,6 +26,7 @@ const App = () => {
 
   return (
     <>
+      <div className={`app ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <Navbar
       city={city} 
       setCity={setCity} 
@@ -39,6 +41,7 @@ const App = () => {
       humidity={weather.main?.humidity}
       wind={weather.wind?.speed}
       icon={`http://openweathermap.org/img/wn/${weather.weather?.[0]?.icon}@2x.png`}/>
+      </div>
     </>
   )
 }
